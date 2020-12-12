@@ -2,20 +2,26 @@
   <table mat-table [dataSource]="matchHistory">
     <ng-container matColumnDef="date">
       <th mat-header-cell *matHeaderCellDef> Date </th>
-      <td mat-cell *matCellDef="let match"> {{match.date}} </td>
+      <td mat-cell *matCellDef="let match"> {{match.date | date: "MMM dd, YYYY - hh:mm"}} </td>
     </ng-container>
 
     <ng-container matColumnDef="team">
       <th mat-header-cell *matHeaderCellDef> Team </th>
       <td mat-cell *matCellDef="let match">
-        <div *ngFor="let member of match.enemyTeam">{{member}}</div>
+        <div class="class-container" *ngFor="let member of match.team">
+          <img src="assets/icons/classes/{{member.class}}.png">
+          <span>{{member.name}}</span>
+        </div>
       </td>
     </ng-container>
 
     <ng-container matColumnDef="enemyTeam">
       <th mat-header-cell *matHeaderCellDef> Enemy Team </th>
       <td mat-cell *matCellDef="let match">
-        <div *ngFor="let member of match.team">{{member}}</div>
+        <div class="class-container" *ngFor="let member of match.enemyTeam">
+          <img src="assets/icons/classes/{{member.class}}.png">
+          <span>{{member.name}}</span>
+        </div>
       </td>
     </ng-container>
 
@@ -30,7 +36,7 @@
     </ng-container>
 
     <ng-container matColumnDef="win">
-      <th mat-header-cell *matHeaderCellDef> Win </th>
+      <th mat-header-cell *matHeaderCellDef> Outcome </th>
       <td mat-cell *matCellDef="let match"> {{match.win}} </td>
     </ng-container>
 
