@@ -1,0 +1,47 @@
+:host {
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+}
+
+.list {
+  table {
+    width: 100%;
+  }
+
+  .loader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+  }
+
+  .mat-column-members {
+    width: 64px;
+    text-align: center;
+  }
+
+  .mat-column-name {
+    & > div {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .mat-column-admins {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    & > div {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
