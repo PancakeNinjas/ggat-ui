@@ -7,6 +7,7 @@
 .class-container{
   height: 26px;
   margin: 5px;
+  display:flex;
 }
 
 .class-container img{
@@ -16,9 +17,8 @@
 }
 
 .class-container span{
-  display:inline-block;
-  vertical-align: middle;
   margin-left: 5px;
+  line-height: 26px;
 }
 
 .list {

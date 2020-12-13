@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TitleBarComponent } from './title-bar/title-bar.component';
 import { MatchHistoryTableComponent } from './match-history-table/match-history-table.component';
 import {MatTableModule} from "@angular/material/table";
+import {IconsModule} from "../assets/icons/icons.module";
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import {MatTableModule} from "@angular/material/table";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    IconsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

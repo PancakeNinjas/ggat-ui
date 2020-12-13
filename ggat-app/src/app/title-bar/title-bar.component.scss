@@ -1,7 +1,15 @@
-.top-nav{
+.nav-header{
   padding: 20px;
+  display:flex;
 
-  &__title{
-    font-size: 20px;
+  &-title{
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  &-icon{
+    height:35px;
+    width: 35px;
+    margin-right: 10px;
   }
 }
