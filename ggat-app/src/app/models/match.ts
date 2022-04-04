@@ -15,6 +15,7 @@ export class Match {
   ) {
   }
 
+  // This will be used to deserialize the json when retrieving match data from the server
   static deserialize(input: any): Match {
     if (!input || typeof input !== 'object') {
       throw new Error('Deserialize Match requires input.');

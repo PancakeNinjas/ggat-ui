@@ -192,7 +192,10 @@ export class ArenaMatchService {
       }
     ], Match.deserialize);
 
+    console.log("matchHistory");
+    console.log(matchHistory);
     return matchHistory;
 
   }
+
 }
