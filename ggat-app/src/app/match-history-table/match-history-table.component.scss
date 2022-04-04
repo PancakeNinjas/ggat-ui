@@ -4,19 +4,19 @@
   flex-direction: column;
 }
 
-.class-container{
+.class-container {
   height: 26px;
   margin: 5px;
-  display:flex;
+  display: flex;
 }
 
-.class-container img{
+.class-container img {
   background-color: #3e3e3e;
   border-radius: 13px;
-  height:26px;
+  height: 26px;
 }
 
-.class-container span{
+.class-container span {
   margin-left: 5px;
   line-height: 26px;
 }
@@ -42,17 +42,18 @@
   .mat-column-admins {
     padding-top: 4px;
     padding-bottom: 4px;
+
     & > div {
       display: flex;
       align-items: center;
     }
   }
 
-  .mat-cell{
+  .mat-cell {
     font-size: 16px;
   }
 
-  .mat-header-row{
+  .mat-header-row {
     background-color: #f0f0f0;
   }
 

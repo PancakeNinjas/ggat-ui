@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ArenaMatchService} from "../services/arena-match.service";
 
 @Component({
@@ -8,7 +8,6 @@ import {ArenaMatchService} from "../services/arena-match.service";
 })
 export class MatchHistoryTableComponent implements OnInit {
 
-  isLoading=true;
   matchHistory: any[];
   columnsToDisplay: string[] = ['date', 'team', 'enemyTeam', 'rating', 'enemyRating', 'win', 'ratingChange'];
 

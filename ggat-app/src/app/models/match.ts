@@ -9,6 +9,7 @@ export class Match {
     public ratingChange: number
   ) { }
 
+  // This will be used to deserialize the json when retrieving match data from the server
   static deserialize(input: any): Match {
     if (!input) {
       throw new Error('Deserialize Match requires input.');
