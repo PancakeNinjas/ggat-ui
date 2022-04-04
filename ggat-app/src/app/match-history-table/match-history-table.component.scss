@@ -4,21 +4,20 @@
   flex-direction: column;
 }
 
-.class-container{
-  height: 26px;
+.class-container {
+  min-height: 26px;
   margin: 5px;
-  display:flex;
+  display: flex;
 }
 
-.class-container img{
+.class-container img {
   background-color: #3e3e3e;
   border-radius: 13px;
-  height:26px;
+  height: 26px;
 }
 
-.class-container span{
+.class-container span {
   margin-left: 5px;
-  line-height: 26px;
 }
 
 .list {
@@ -26,34 +25,54 @@
     width: 100%;
     border-radius: 20em;
   }
+}
 
-  .mat-column-members {
-    width: 64px;
-    text-align: center;
+.mat-column-date {
+  width: 24%;
+}
+
+.mat-column-win {
+  width: 10%;
+
+  & > span {
+    align-items: center
   }
+}
 
-  .mat-column-name {
-    & > div {
-      display: flex;
-      align-items: center;
-    }
-  }
+.mat-column-team {
+  width: 22%;
+}
 
-  .mat-column-admins {
-    padding-top: 4px;
-    padding-bottom: 4px;
-    & > div {
-      display: flex;
-      align-items: center;
-    }
-  }
+.mat-column-enemyTeam {
+  width: 22%;
+}
 
-  .mat-cell{
-    font-size: 16px;
-  }
+.mat-column-rating {
+  width: 10%;
+}
 
-  .mat-header-row{
-    background-color: #f0f0f0;
-  }
+.mat-column-enemyRating {
+  width: 10%;
+}
 
+.mat-cell {
+  font-size: 16px;
+}
+
+.mat-header-row {
+  background-color: #f0f0f0;
+}
+
+.mat-row:hover {
+  background-color: #f0f0f0;
+}
+
+.win {
+  color: green;
+  font-weight: 500;
+}
+
+.loss {
+  color: red;
+  font-weight: 500;
 }

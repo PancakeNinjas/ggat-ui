@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { ArenaMatchService } from './arena-match.service';
+import {ArenaMatchService} from './arena-match.service';
 
 describe('ArenaMatchService', () => {
   let service: ArenaMatchService;

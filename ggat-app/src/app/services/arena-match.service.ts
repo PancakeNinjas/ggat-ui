@@ -1,4 +1,6 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
+import {Match} from '../models/match';
+import {deserializeArray} from '../../utils/deserialization-utils';
 
 @Injectable({
   providedIn: 'root'
@@ -6,43 +8,191 @@ import { Injectable } from '@angular/core';
 
 export class ArenaMatchService {
 
-  constructor() { }
-
-   getMatches(){
-    let matchHistory = [
+  getMatches(): Match[] {
+    const matchHistory = deserializeArray([
       {
-        date: 1607763784000,
-        team:[{name: "Balance Druid", class: "druid"}, {name: "Shadow Priest", class: "priest"}],
-        enemyTeam:[{name: "Subtlety Rogue", class: "rogue"}, {name: "Fury Warrior", class: "warrior"}],
-        rating: 1245,
-        enemyRating: 1125,
+        datetime: 1607763784000,
+        team: {
+          mmr: 1500,
+          players: [
+            {
+              name: 'Huzzari',
+              playerClass: 11,
+              specialization: 102,
+              damageDone: 123456,
+              healingDone: 123456,
+              killingBlows: 1,
+              rating: 1323,
+              ratingDelta: 30
+            },
+            {
+              name: 'Vanillamilk',
+              playerClass: 5,
+              specialization: 258,
+              damageDone: 123456,
+              healingDone: 123456,
+              killingBlows: 1,
+              rating: 1323,
+              ratingDelta: 30
+            }
+          ],
+        },
+        enemyTeam: {
+          mmr: 1600,
+          players: [
+            {
+              name: 'Pikaboo',
+              playerClass: 4,
+              specialization: 261,
+              damageDone: 123456,
+              healingDone: 123456,
+              killingBlows: 0,
+              rating: 1353,
+              ratingDelta: 30
+            },
+            {
+              name: 'Bajheera',
+              playerClass: 1,
+              specialization: 71,
+              damageDone: 123456,
+              healingDone: 123456,
+              killingBlows: 0,
+              rating: 1323,
+              ratingDelta: 30
+            }
+          ],
+        },
         win: true,
-        ratingChange: 24
+        mapId: 123,
+        season: 1,
+        duration: 45,
+        rated: true,
+        arenaTeamSize: 2,
+        id: 1111
       },
       {
-        date: 1607764785000,
-        team:[{name: "Balance Druid", class: "druid"}, {name: "Shadow Priest", class: "priest"}],
-        enemyTeam:[{name: "Restoration Shaman", class: "shaman"}, {name: "Retribution Paladin", class: "paladin"}],
-        rating: 1270,
-        enemyRating: 1347,
+        datetime: 1607864785000,
+        team: {
+          mmr: 1500,
+          players: [
+            {
+              name: 'Huzzari',
+              playerClass: 11,
+              specialization: 102,
+              damageDone: 123456,
+              healingDone: 123456,
+              killingBlows: 1,
+              rating: 1323,
+              ratingDelta: 30
+            },
+            {
+              name: 'Vanillamilk',
+              playerClass: 5,
+              specialization: 258,
+              damageDone: 123456,
+              healingDone: 123456,
+              killingBlows: 1,
+              rating: 1323,
+              ratingDelta: 30
+            }
+          ],
+        },
+        enemyTeam: {
+          mmr: 1600,
+          players: [
+            {
+              name: 'Cdew',
+              playerClass: 7,
+              specialization: 264,
+              damageDone: 123456,
+              healingDone: 123456,
+              killingBlows: 0,
+              rating: 1353,
+              ratingDelta: 30
+            },
+            {
+              name: 'Mez',
+              playerClass: 6,
+              specialization: 252,
+              damageDone: 123456,
+              healingDone: 123456,
+              killingBlows: 0,
+              rating: 1323,
+              ratingDelta: 30
+            }
+          ],
+        },
         win: false,
-        ratingChange: 12
+        mapId: 123,
+        season: 1,
+        duration: 45,
+        rated: true,
+        arenaTeamSize: 2,
+        id: 1112
       },
       {
-        date: 1608765786000,
-        team:[{name: "Balance Druid", class: "druid"}, {name: "Shadow Priest", class: "priest"}],
-        enemyTeam:[{name: "Frost Deathknight", class: "deathknight"}, {name: "Windwalker Monk", class: "monk"}],
-        rating: 1258,
-        enemyRating: 1355,
+        datetime: 1607999796000,
+        team: {
+          mmr: 1500,
+          players: [
+            {
+              name: 'Huzzari',
+              playerClass: 11,
+              specialization: 102,
+              damageDone: 123456,
+              healingDone: 123456,
+              killingBlows: 1,
+              rating: 1323,
+              ratingDelta: 30
+            },
+            {
+              name: 'Vanillamilk',
+              playerClass: 5,
+              specialization: 258,
+              damageDone: 123456,
+              healingDone: 123456,
+              killingBlows: 1,
+              rating: 1323,
+              ratingDelta: 30
+            }
+          ],
+        },
+        enemyTeam: {
+          mmr: 1600,
+          players: [
+            {
+              name: 'Sodapoppin',
+              playerClass: 11,
+              specialization: 103,
+              damageDone: 123456,
+              healingDone: 123456,
+              killingBlows: 0,
+              rating: 1353,
+              ratingDelta: 30
+            },
+            {
+              name: 'Venruki',
+              playerClass: 8,
+              specialization: 62,
+              damageDone: 123456,
+              healingDone: 123456,
+              killingBlows: 0,
+              rating: 1323,
+              ratingDelta: 30
+            }
+          ],
+        },
         win: true,
-        ratingChange: 15
+        mapId: 123,
+        season: 1,
+        duration: 45,
+        rated: true,
+        arenaTeamSize: 2,
+        id: 1113
       }
-    ]
+    ], Match.deserialize);
 
-    console.log("matchHistory");
-    console.log(matchHistory);
     return matchHistory;
 
   }
-
 }

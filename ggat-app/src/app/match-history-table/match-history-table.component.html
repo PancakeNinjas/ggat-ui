@@ -2,15 +2,23 @@
   <table mat-table [dataSource]="matchHistory">
     <ng-container matColumnDef="date">
       <th mat-header-cell *matHeaderCellDef> Date </th>
-      <td mat-cell *matCellDef="let match"> {{match.date | date: "MMM dd, YYYY - hh:mm"}} </td>
+      <td mat-cell *matCellDef="let match"> {{match.datetime | date: "MMM dd, YYYY - HH:mm"}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="win">
+      <th mat-header-cell *matHeaderCellDef> Outcome </th>
+      <td mat-cell *matCellDef="let match">
+        <span class="win" *ngIf="match.win">W</span>
+        <span class="loss" *ngIf="!match.win">L</span>
+      </td>
     </ng-container>
 
     <ng-container matColumnDef="team">
       <th mat-header-cell *matHeaderCellDef> Team </th>
       <td mat-cell *matCellDef="let match">
-        <div class="class-container" *ngFor="let member of match.team">
-          <img src="assets/icons/classes/{{member.class}}.png">
-          <span>{{member.name}}</span>
+        <div class="class-container" *ngFor="let member of match.team.players">
+          <img src="assets/icons/classes/{{classes[member.playerClass].icon}}.png">
+          <span>{{specializations[member.specialization].name}} {{classes[member.playerClass].name}}</span>
         </div>
       </td>
     </ng-container>
@@ -18,35 +26,25 @@
     <ng-container matColumnDef="enemyTeam">
       <th mat-header-cell *matHeaderCellDef> Enemy Team </th>
       <td mat-cell *matCellDef="let match">
-        <div class="class-container" *ngFor="let member of match.enemyTeam">
-          <img src="assets/icons/classes/{{member.class}}.png">
-          <span>{{member.name}}</span>
+        <div class="class-container" *ngFor="let member of match.enemyTeam.players">
+          <img src="assets/icons/classes/{{classes[member.playerClass].icon}}.png">
+          <span>{{specializations[member.specialization].name}} {{classes[member.playerClass].name}}</span>
         </div>
       </td>
     </ng-container>
 
     <ng-container matColumnDef="rating">
-      <th mat-header-cell *matHeaderCellDef> Rating </th>
-      <td mat-cell *matCellDef="let match"> {{match.rating}} </td>
+      <th mat-header-cell *matHeaderCellDef> MMR </th>
+      <td mat-cell *matCellDef="let match"> {{match.team.mmr}} </td>
     </ng-container>
 
     <ng-container matColumnDef="enemyRating">
-      <th mat-header-cell *matHeaderCellDef> Enemy Rating </th>
-      <td mat-cell *matCellDef="let match"> {{match.enemyRating}} </td>
-    </ng-container>
-
-    <ng-container matColumnDef="win">
-      <th mat-header-cell *matHeaderCellDef> Outcome </th>
-      <td mat-cell *matCellDef="let match"> {{match.win}} </td>
-    </ng-container>
-
-    <ng-container matColumnDef="ratingChange">
-      <th mat-header-cell *matHeaderCellDef> Rating Change </th>
-      <td mat-cell *matCellDef="let match"> {{match.ratingChange}} </td>
+      <th mat-header-cell *matHeaderCellDef> Enemy MMR </th>
+      <td mat-cell *matCellDef="let match"> {{match.enemyTeam.mmr}} </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-    <tr mat-row *matRowDef="let myRowData; columns: columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let match; columns: columnsToDisplay"></tr>
 
   </table>
 </div>

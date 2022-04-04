@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5d3497f2-9920-4b57-bbea-c0cb5c1816f9" name="Default Changelist" comment="Add class icons and format date">
+      <change beforePath="$PROJECT_DIR$/ggat-app/src/app/match-history-table/match-history-table.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ggat-app/src/app/match-history-table/match-history-table.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ggat-app/src/app/match-history-table/match-history-table.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ggat-app/src/app/match-history-table/match-history-table.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ggat-app/src/app/match-history-table/match-history-table.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ggat-app/src/app/match-history-table/match-history-table.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ggat-app/src/app/services/arena-match.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ggat-app/src/app/services/arena-match.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ggat-app/src/app/title-bar/title-bar.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ggat-app/src/app/title-bar/title-bar.component.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lXBo2RGOljGxfLSvjmjuE5CBed" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/repos/services/front_end" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/ggat-app/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ggat-app/src/assets/icons" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d3497f2-9920-4b57-bbea-c0cb5c1816f9" name="Default Changelist" comment="" />
+      <created>1607733727657</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607733727657</updated>
+      <workItem from="1607733730700" duration="19952000" />
+      <workItem from="1607799628824" duration="147000" />
+      <workItem from="1607821218081" duration="5222000" />
+      <workItem from="1607902692582" duration="12037000" />
+      <workItem from="1607961333786" duration="1396000" />
+      <workItem from="1607988612934" duration="502000" />
+      <workItem from="1608048217813" duration="778000" />
+      <workItem from="1608677081969" duration="2229000" />
+      <workItem from="1608985980371" duration="2612000" />
+      <workItem from="1609027923698" duration="3578000" />
+      <workItem from="1609859405857" duration="1170000" />
+    </task>
+    <task id="LOCAL-00001" summary="UI app initialization, implementation of match-history-table, start of arena match service">
+      <created>1607748723216</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607748723216</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="UI app initialization, implementation of match-history-table, start of arena match service" />
+    <MESSAGE value="Add class icons and format date" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add class icons and format date" />
+  </component>
+</project>
